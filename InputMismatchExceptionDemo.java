@@ -10,14 +10,13 @@ public class InputMismatchExceptionDemo {
                 System.out.print("Ingresa un numero: ");
                 int number = input.nextInt();
 
-                // Display the result
+    
                 System.out.println("El numero ingresado es: " + number);
 
                 continueInput = false;
             } catch (InputMismatchException ex) {
                 System.out.println("Intenta otra vez. (Entrada incorrecta: necesita un número entero)");
-                input.nextLine(); // Discard input
-            }
+                input.nextLine(); 
         } while (continueInput);
     }
 }
